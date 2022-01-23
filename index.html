@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,6 @@
 
         h1 {
             text-align: center;
-            
         }
 
         p {
@@ -24,10 +24,8 @@
             overflow: hidden;
         }
 
-
-        #container {
+        .row {
             position: relative;
-
         }
 
         #p1 {
@@ -41,7 +39,6 @@
             padding: 10px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-
         }
 
         #p2 {
@@ -58,11 +55,10 @@
             font-family: Arial, Helvetica, sans-serif;
 
         }
-
-        #p3 {
+        #p3{
             background-color: #E5D198;
             position: absolute;
-            top: 0;
+            top:0;
             right: 0;
             font-weight: bold;
             height: 35px;
@@ -70,39 +66,34 @@
             padding: 10px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
-
         }
-
-
-        .row {
+        .container{
             width: 100%;
-
         }
-
-
         /********** Large devices only **********/
         @media (min-width: 992px) {
             .col-lg-4{
                 float: left;
             }
             .col-lg-4 {
-                width: 33.33%;
+                width: 33%;
              }
         }
 
-        /********** Medium devices only **********/
-        @media (min-width: 768px) and (max-width: 991px) {
-            .col-md-6 {
-                float: left;
+         /********** Medium devices only **********/
+         @media (min-width: 768px) and (max-width: 991px){
+             .col-md-6{
+                 float: left;
+             }
+             .col-md-6{
+                 width: 50%;
+             }
+             .sushi{
+                 width: 100%;
+             }
 
-            }
-
-            .col-md-6 {
-                width: 50%;
-            }
-        }
-
-        /********** Mobile only **********/
+         }
+         /********** Mobile only **********/
         @media (max-width: 767px) {
             .col-sm-12 {
                 float: left;
@@ -117,28 +108,40 @@
 </head>
 
 <body>
-    <div class="row">
+    <div class="container">
         <h1>Our Menu</h1>
-        <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aut ipsa, in et quia harum error aspernatur, eum, asperiores assumenda similique illo animi officiis. Dolorem accusamus magni est. Non optio dicta nihil, quo nemo omnis dolor iste odit soluta iure!</p>
-            <p id="p1">Chicken</p>
-
+        <div class="col-lg-4 col-md-6 col-sm-12 row">
+            <p id="p1">
+                Chicken
+            </p>
+            <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit nostrum sapiente
+                expedita totam in, delectus consequatur quos vero assumenda, iusto laborum eaque quis explicabo eum
+                eveniet obcaecati? Facilis totam sequi impedit eum soluta eveniet repellendus asperiores quos dolor?
+                Libero!
+            </p>
         </div>
-
-
-
-        <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet aut fugit qui ex quos cumque officia recusandae, voluptates atque ea natus inventore illo! Ea ducimus esse molestiae suscipit quisquam repellendus aut totam commodi, nam similique est alias corrupti mollitia! Placeat.</p>
-
-            <p id="p2">Beef</p>
-
+        <div class="col-lg-4 col-md-6 col-sm-12 row">
+            <p id="p2">
+                Beef
+            </p>
+            <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit nostrum sapiente
+                expedita totam in, delectus consequatur quos vero assumenda, iusto laborum eaque quis explicabo eum
+                eveniet obcaecati? Facilis totam sequi impedit eum soluta eveniet repellendus asperiores quos dolor?
+                Libero!
+            </p>
         </div>
-
-        <div class="col-lg-4 col-md-12 col-sm-12" id="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eveniet quas temporibus dolore aperiam maiores, laborum quod esse nemo, qui deleniti iste neque quis enim unde sequi! Esse ex odio ullam a cupiditate, praesentium velit maiores autem atque blanditiis accusantium!</p>
-
-            <p id="p3">Sushi</p>
-
+        <div class="col-lg-4 col-md-6 col-sm-12 row sushi">
+            <p id="p3">
+                Sushi
+            </p>
+            <p class="content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit nostrum sapiente
+                expedita totam in, delectus consequatur quos vero assumenda, iusto laborum eaque quis explicabo eum
+                eveniet obcaecati? Facilis totam sequi impedit eum soluta eveniet repellendus asperiores quos dolor?
+                Libero!
+            </p>
         </div>
 
     </div>
