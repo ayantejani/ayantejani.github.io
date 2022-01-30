@@ -1,12 +1,14 @@
 var names = [
-    "Gandhi",
-    "Jhunjhunwala",
-    "Mike",
-    "Harvey",
-    "jonathon",
-    "Jamison",
-    "Akshay",
-    "James"
+    "Yaakov",
+    "John",
+    "Jen",
+    "jason",
+    "Paul",
+    "frank",
+    "Larry",
+    "paula",
+    "laura",
+    "jim"
 ];
 
 for(var i=0;i<names.length;i++){
